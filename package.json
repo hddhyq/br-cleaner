@@ -1,7 +1,7 @@
 {
   "name": "br-cleaner",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "packageManager": "pnpm@9.9.0",
   "description": "git branch cleaner",
   "author": "brokenbones <brokenbonesdd@gmail.com>",
