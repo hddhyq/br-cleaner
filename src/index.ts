@@ -110,6 +110,9 @@ async function main(): Promise<void> {
       remoteName = selectedRemote
     }
 
+    // Fetch and prune before getting branches
+    await git.fetch(remoteName, { '--prune': null })
+
     const allBranches = await getBranches(remoteName)
     const filteredBranches = await filterBranches(allBranches)
     const branchesToDelete = await selectBranches(filteredBranches)
