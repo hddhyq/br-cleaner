@@ -1,7 +1,7 @@
 {
   "name": "br-cleaner",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "packageManager": "pnpm@9.9.0",
   "description": "git branch cleaner",
   "author": "brokenbones <brokenbonesdd@gmail.com>",
@@ -34,7 +34,7 @@
     }
   },
   "bin": {
-    "br-cleaner": "./dist/index.cjs"
+    "br-cleaner": "br-cleaner.mjs"
   },
   "files": [
     "dist"
