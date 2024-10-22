@@ -1,18 +1,18 @@
 {
-  "name": "pkg-placeholder",
+  "name": "br-cleaner",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@9.9.0",
-  "description": "_description_",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "description": "git branch cleaner",
+  "author": "brokenbones <brokenbonesdd@gmail.com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/pkg-placeholder#readme",
+  "funding": "https://github.com/sponsors/hddhyq",
+  "homepage": "https://github.com/hddhyq/br-cleaner#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/pkg-placeholder.git"
+    "url": "git+https://github.com/hddhyq/br-cleaner.git"
   },
-  "bugs": "https://github.com/antfu/pkg-placeholder/issues",
+  "bugs": "https://github.com/hddhyq/br-cleaner/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -33,6 +33,9 @@
       ]
     }
   },
+  "bin": {
+    "branch-cleaner": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -46,6 +49,10 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "inquirer": "^12.0.0",
+    "simple-git": "^3.27.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.3.2",
